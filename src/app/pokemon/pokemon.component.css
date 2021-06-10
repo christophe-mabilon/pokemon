@@ -1,0 +1,248 @@
+li {
+  box-sizing: border-box;
+}
+.search {
+  position: sticky;
+  top: 20px;
+}
+button#btn-blue {
+  background: linear-gradient(
+    to top,
+    rgba(69, 0, 117, 0.7) 0%,
+    rgba(150, 0, 255, 0.8) 30%,
+    rgb(141, 37, 141)
+  );
+  border: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.rounded-10 {
+  border-radius: 10px;
+  padding: 15px 10px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+}
+input:focus,
+input {
+  border-color: rgb(98, 0, 168);
+}
+select {
+  width: 17%;
+}
+.card {
+  box-shadow: 0 3px 7px rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+.card img {
+  width: 7rem;
+}
+.logo {
+  width: 10%;
+  width: auto;
+}
+.btn {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    to bottom,
+    rgba(75, 0, 130, 1) 85%,
+    rgba(3, 140, 219, 0.4) 100%
+  );
+  border-radius: 7px;
+  margin: 10px 0px;
+  padding: 10px;
+}
+.btn:hover {
+  background: linear-gradient(
+    to bottom,
+    rgb(118, 0, 202) 85%,
+    rgba(3, 140, 219, 0.4) 100%
+  );
+  transition: 0.4s;
+}
+.btn-previous {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    to right,
+    rgba(75, 0, 130, 1) 85%,
+    rgba(118, 0, 202, 0.9) 100%
+  );
+  border-radius: 7px;
+  margin: 10px 0px;
+  padding: 10px;
+}
+.btn-previous:hover {
+  background: linear-gradient(
+    to right,
+    rgb(57, 1, 97) 85%,
+    rgba(118, 0, 202, 0.9) 100%
+  );
+  transition: 0.4s;
+}
+.btn-next {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    to left,
+    rgba(75, 0, 130, 1) 85%,
+    rgba(118, 0, 202, 0.9) 100%
+  );
+  border-radius: 7px;
+  margin: 10px 0px;
+  padding: 10px;
+}
+.btn-next:hover {
+  background: linear-gradient(
+    to left,
+    rgb(57, 1, 97) 85%,
+    rgba(118, 0, 202, 0.9) 100%
+  );
+  transition: 0.4s;
+}
+.btn-type {
+  width: 95%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+  margin: 10px 0px;
+  padding: 10px;
+}
+.btn-typex2 {
+  width: 47.5%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+  margin: 10px 0px;
+  padding: 10px;
+}
+.btn-titre {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(3, 140, 219, 0.8),
+    rgba(1, 18, 73, 0.849)
+  );
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+  margin: 0;
+  padding: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.vide {
+  height: 24px;
+}
+
+h5 {
+  text-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+}
+.details {
+  color: rgb(16, 27, 65);
+}
+.Normal {
+  background: linear-gradient(rgba(25, 0, 49, 0.8), rgba(150, 0, 255, 0.7));
+  color: white;
+}
+.Combat {
+  background: linear-gradient(rgba(180, 7, 7, 0.7), rgb(100, 4, 4));
+  color: white;
+  background-color: rgb(180, 7, 7);
+}
+.Vol {
+  background: linear-gradient(rgba(2, 109, 141, 0.7), rgb(2, 32, 61));
+  color: white;
+}
+.Poison {
+  background: linear-gradient(rgba(4, 143, 185, 0.7), rgb(3, 53, 100));
+  color: white;
+}
+.Sol {
+  background: linear-gradient(rgb(161, 61, 2), rgb(71, 30, 2));
+  color: white;
+}
+.Roche {
+  background: linear-gradient(rgba(160, 161, 161, 0.7), rgb(61, 61, 61));
+  color: white;
+}
+.Insecte {
+  background: linear-gradient(rgba(24, 233, 76, 0.7), rgb(3, 100, 40));
+  color: white;
+}
+.Spectre {
+  background: linear-gradient(rgba(244, 247, 245, 0.7), rgb(206, 206, 206));
+  color: white;
+  color: rgb(41, 40, 40);
+  text-shadow: none !important;
+}
+.Acier {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.8) 0%,
+    rgb(194, 191, 191) 60%,
+    rgb(73, 73, 73) 100%
+  );
+  color: white;
+}
+.Feu {
+  background: linear-gradient(rgb(255, 217, 0), rgb(196, 57, 2));
+  color: white;
+}
+.Eau {
+  background: linear-gradient(rgba(24, 184, 233, 0.7), rgb(3, 53, 100));
+  color: white;
+}
+.Plante {
+  background: linear-gradient(rgba(3, 100, 24, 0.7), rgba(3, 100, 24, 1));
+  color: white;
+}
+.electrik {
+  background: linear-gradient(rgb(246, 250, 1), rgb(105, 104, 4));
+  color: white;
+}
+.Psy {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.5) 0%,
+    rgb(202, 2, 112, 0.5) 40%,
+    rgb(202, 2, 112, 1) 100%
+  );
+  color: white;
+}
+.Glace {
+  background: linear-gradient(
+    rgba(175, 238, 238, 1) 0%,
+    rgb(255, 255, 255) 40%,
+    rgb(255, 255, 255, 1) 100%
+  );
+  color: white;
+  color: rgb(41, 40, 40);
+}
+.Dragon {
+  background: linear-gradient(rgba(82, 136, 0, 0.6), rgb(55, 90, 1));
+  color: white;
+}
+.Tenèbres {
+  background: linear-gradient(rgba(41, 40, 40, 0.6), rgb(0, 0, 0));
+  color: white;
+}
+.Fee {
+  background: linear-gradient(rgba(255, 0, 234, 0.89), rgb(100, 3, 87));
+  color: white;
+}
+.inconnu {
+  background-color: rgba(150, 0, 255, 0.8);
+}
+.Obscur {
+  background-color: rgba(25, 0, 49, 0.8);
+}
+p.prev::before {
+  content: '';
+  position: absolute;
+  left: 450px;
+  top: 0;
+
+  /* taille */
+  height: 0;
+  width: 0;
+
+  /* les bordures */
+  border-right: 36px solid #aaaaaa;
+  border-bottom: 18px solid transparent;
+  border-top: 18px solid transparent;
+}
+.shadow-5 {
+  box-shadow: 0 3px 3px rgb(252, 252, 252, 0.5);
+}

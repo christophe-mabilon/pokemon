@@ -1,0 +1,50 @@
+<ng-container *ngIf="min !==0 && max-min === 1;">
+  <div class="d-block text-center" class="text-center"><button (click)="less()"
+      class="btn btn-primary">PRECEDENT</button></div>
+</ng-container>
+<article *ngFor="let pokemon of pokemons| slice:min:max let i=index;" [pokemons]="pokemon"
+  class="col-12 col-sm-6 col-md-4 justify-content-center my-3 p-md-3 align-items-stech py-auto">
+  <div class="card bg-white border border-dark ">
+    <div class="d-inline text-center btn-titre"><img class="logo" src="../assets/img/logo.png" alt="logo pokemon">
+      <h5 class="pt-2">{{pokemon.number}} - <b class=text-capitalize>{{pokemon.name_Fr}}</b></h5>
+    </div>
+
+    <div class="d-flex align-items-center mx-auto">
+      <a href="{{pokemon.img}}" target="_blank"><img class="img-fluid " src="../assets/{{pokemon.img}}"
+          alt="{{pokemon.alt}}"></a>
+    </div>
+    <small class="text-center">Nom Anglais : <b class=text-capitalize>{{pokemon.name_En}}</b></small>
+    <ng-container *ngIf="!pokemon.type2; else elseTemplate">
+      <div class="text-center">
+        <button class="justify-content-center px-auto btn-type {{pokemon.type1}} ">Pokemon
+          type :
+          <b class="shadow-txt">{{pokemon.type1}}</b></button>
+      </div>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <div class="d-inline-flex text-white justify-content-around">
+        <button class="btn-typex2 {{pokemon.type1}} ">Type : <b class="shadow-txt">{{pokemon.type1}}</b></button>
+        <button class="btn-typex2 {{pokemon.type2}} ">Type : <b class="shadow-txt">{{pokemon.type2}}</b></button>
+      </div>
+    </ng-template>
+    <ng-container *ngIf="pokemon.evolue_depuis !== ''; else elseTemplate2">
+      <p class="ms-3">Évolue depuis : <b>{{pokemon.evolue_depuis}}</b></p>
+    </ng-container>
+    <ng-template #elseTemplate2>
+      <p class="vide"></p>
+    </ng-template>
+    <ul class="row d-flex list-unstyled p-3">
+      <li class="text-start col-5">Taille : <b class="details">{{pokemon.height /10}} metres</b></li>
+      <li class="text-end col-7">Points de vie : <b class="details">{{pokemon.hp}}</b></li>
+      <li class="text-start col-5">Poids : <b class="details">{{(pokemon.weight /10)}} kilos</b></li>
+      <li class="text-end col-7">Points d'attaque : <b class="details">{{pokemon.attack}}</b></li>
+      <li class="text-start col-5">Vitesse : <b class="details">{{pokemon.speed}}</b></li>
+      <li class="text-end col-7">Points de défense : <b class="details">{{pokemon.specialeAttaque}}</b></li>
+      <li class="text-start col-5"></li>
+      <li class="text-end col-7">Attaque séciale : <b class="details">{{pokemon.specialDefense}}</b></li>
+    </ul>
+  </div>
+</article>
+<ng-container *ngIf="min !==897 && max-min === 1;">
+  <div class="d-block text-center"><button (click)="more()" class="btn btn-primary">SUIVANT</button></div>
+</ng-container>

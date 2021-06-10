@@ -1,0 +1,38 @@
+<main>
+  <h1 class="text-white text-center mt-2">POKEDEX</h1>
+</main>
+<ng-container *ngIf="min === 0 && max === 0">
+  <p class="text-center text-uppercase text-white catch">Attrapez les Tous !</p>
+</ng-container>
+<form class="container-fluid text-center search" (ngSubmit)="submit()" [formGroup]="form" id="go">
+  <nav class="d-md-flex justify-content-center mt-3 m-auto align-items-center">
+    <select class="form-select d-block  w-50 " aria-label="Default select example" formControlName="name">
+      <option value="" selected>Faites votre choix</option>
+      <option value="nom">Rechercher par nom</option>
+      <ng-container *ngIf="min === 1000 && max === 1000">
+        <option [pokemons]="pokemon" *ngFor="let pokemon of pokemons" [ngValue]="pokemon.number">n°{{pokemon.number}}
+          --
+          {{pokemon.name_Fr}}</option>
+      </ng-container>
+      <option value="tous">Tous les pokemons</option>
+      <option value="g1">Genération 1</option>
+      <option value="g2">Genération 2</option>
+      <option value="g3">Genération 3</option>
+      <option value="g4">Genération 4</option>
+      <option value="g5">Genération 5</option>
+      <option value="g6">Genération 6</option>
+      <option value="g7">Genération 7</option>
+      <option value="g8">Genération 8</option>
+
+    </select>
+    <button class="btn btn-primary ms-2 px-3">Rechercher</button>
+  </nav>
+</form>
+<section class="container-fluid justify-content-center m-auto mt-5 pb-5">
+
+  <app-pokemon [min]="min" [max]="max" class="d-flex w-100 row align-items-center justify-content-center p-auto m-auto">
+  </app-pokemon>
+
+
+
+</section>
